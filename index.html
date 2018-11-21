@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="icon" href="images/favicon/favicon.ico" />
+    <!-- favicon -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/flexslider.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script> <script src="js/respond.min.js"></script>
+<![endif]-->
+  </head>
+  <body>
+
+    <div class="scroll-view sec">
+      <div class="rightbox">
+        <div class="app">
+          <div class="app-cot">
+            <div class="stand">
+              <div class="stand-fix">
+                <img src="images/app2_1000x1000_20e0b68f-92a8-4b32-875b-0154a32cb672_1000x1000.png" >
+                <img src="images/app3_1000x1000_e2ac562e-476a-4c93-bfb3-235ac5ebe474_1000x1000.png" >
+                <img src="images/app5_1000x1000_db5ee1bf-e6da-4ff7-9a09-bed22ffe5ec9_1000x1000.png" >
+                <img src="images/app2_1000x1000_20e0b68f-92a8-4b32-875b-0154a32cb672_1000x1000.png" >
+              </div>
+            </div>
+          </div>
+            <div class="mytext" style="position: fixed;background: red; top:-35px; left:85px;"><h1>learn more</h1> </div>
+            <img src="images/iphone-back.png" class="iphone-static">
+
+        </div>
+      </div>
+    </div>
+    <div class="scroll-view sec1">
+      <div class="col-md-6 left-box"></div>
+      <div class="col-md-6 right-box"></div>
+    </div>  
+    <div class="scroll-view sec2">
+      <div class="col-md-6 left-box"></div>
+      <div class="col-md-6 right-box"></div>
+    </div> 
+    <div class="scroll-view sec3">
+      <div class="col-md-6 left-box"></div>
+      <div class="col-md-6 right-box"></div>
+    </div>     
+
+
+    <ul id="navigation">
+    <li><a href="#section1">Section 1</a></li>
+    <li><a href="#section2">Section 2</a></li>
+    <li><a href="#section3">Section 3</a></li>
+    <li><a href="#section4">Section 4</a></li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+.rightbox{display: block;position: fixed;top: 0;right: 0;height: 100%;width: 50%;z-index: 3;text-align: center;}
+.app{right: 30.52632%;height: auto;width: 45.57895%;min-width: 45.57895%;top: 0%;margin-top: 34.73684%;min-height: auto;margin-top: 0%;transform: translate(0px, 35%);}
+.app-cot {position: absolute;width: 61.01064%;height: 100%;top: 0;left:19.49468%;}
+.stand{position: relative;padding-top: 213.48315%;top: 50%;transform: translate(0, -50%);}
+.stand-fix { position: absolute;top: -4px;left: 0px;right: 1px;bottom: -1px;background: #222;overflow: hidden;border: solid 2px #000;border-radius: 5px;}
+.stand-fix img{position: relative;top: 0%;height: 100%;transition: top 0.4s ease-out;}
+.sec {display: block;height: 100vh;position: relative;}
+.sec1 {display: flex;height: 100%;}
+.sec2 {display: flex;height: 100%;}
+.sec3 {display: flex;height: 100%;}
+.left-box {height: 100vh;background: #f1f1f1;}
+.right-box {height: 100vh;background: #000;}
+.sec2 .left-box {height: 100vh;background: #000;}
+.sec2 .right-box {height: 100vh;background: #f1f1f1;}
+.sec3 .left-box {height: 100vh;background: #f1f1f1;}
+.sec3 .right-box {height: 100vh;background: #000;}
+.iphone-static{position: relative;object-fit: contain;width: auto;height: 100%;}
+
+
+
+#navigation {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: #ffffff;
+    box-shadow: 0 10px 10px -10px #000000;z-index: 99999
+}
+#navigation > li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#navigation > li > a {
+    margin: 1px;
+    color: #000000;
+    background: #cccccc;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 400ms;
+}
+#navigation > li > a.current,
+#navigation > li:hover > a {
+    background: #999999;    
+}
+.pageSection {
+    min-height: 600px;
+    padding: 20px;
+    background: #dddddd;
+}
+.pageSection:nth-child(odd) {
+    background: #eeeeee;
+}
+h2 {
+    margin: 0;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/isInViewport.jquery.js"></script>
+<script type="text/javascript">
+
+
+$(function(){
+
+  $('.sec1').isInViewport(function (status) {
+    if (status === 'entered') {
+      $('.stand-fix img').css({top: "-100%"});
+    }
+
+     if (status === 'leaved') {
+      $('.stand-fix img').css({top: "0%"});
+    }
+
+  })
+
+});
+
+// Changing menu dependent on section
+$(window).scroll(function() {
+    
+    var windowTop = Math.max($('body').scrollTop(), $('html').scrollTop());
+    
+    $('.scroll-view').each(function (index) {
+        if (windowTop > ($(this).position().top - 500))
+        {       
+            $('#navigation a.current').removeClass('current');
+            $('#navigation a:eq(' + index + ')').addClass('current');
+            $('.stand-fix img').css({top: "-" +100 *(index) +"%"});
+        }
+    });
+    
+}).scroll();
+
+// Page section scroll
+// $('#navigation a').click( function (e) {
+    
+//     hrefString = $(this).attr('href').split('#');
+    
+//     if ($(hrefString).size() > 1)
+//     {
+//         if ($('#' + hrefString[1]).size() > 0 )
+//         {
+//             e.preventDefault();
+//             $('html,body').animate({scrollTop: $('#' + hrefString[1]).offset().top}, 1000);
+//         }
+//     }
+// });
+</script>
+  </body>
+</html>

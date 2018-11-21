@@ -1,0 +1,279 @@
+@font-face{font-family:'opensans-reg';src:url('../fonts/opensans-regular.woff') format('woff'), url('../fonts/opensans-regular.woff2') format('woff2'), url('../fonts/opensans-regular.ttf') format('truetype'),url('../fonts/opensans-regular.svg#tiempo-regular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'tiempo-reg';src:url('../fonts/tiempo-regular.woff') format('woff'), url('../fonts/tiempo-regular.woff2') format('woff2'),url('../fonts/tiempo-regular.ttf') format('truetype'),url('../fonts/tiempo-regular.svg#tiempo-regular') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'tiempo-italic';src:url('../fonts/tiempo-italic.woff') format('woff'), url('../fonts/tiempo-italic.woff2') format('woff2'),url('../fonts/tiempo-italic.ttf') format('truetype'),url('../fonts/tiempo-italic.svg#tiempo-italic') format('svg');font-weight:normal;font-style:normal;}
+@font-face{font-family:'baskaerville';src:url('../fonts/baskerv1.woff') format('woff'), url('../fonts/baskerv1.woff2') format('woff2'),url('../fonts/baskerv1.ttf') format('truetype'),url('../fonts/baskerv1.svg#baskerv1') format('svg');font-weight:normal;font-style:normal;}
+body{font-family:'opensans-reg';}
+.col-centered{float:none !important;margin:0 auto;}
+.center{margin:0 auto;display:block;}
+.navbar-brand{float:left;padding:35px 15px;font-size:18px;line-height:20px;width:150px;height:29px;background-image:url(../images/logo.png);background-repeat:no-repeat;background-position:center;background-size:contain;}
+nav.navbar.navbar-default{background:rgba(0,0,0,.5);border:none;margin-bottom:0px;border-radius:0;}
+.navbar>.container .navbar-brand{margin-left:unset;}
+.social-menu {display: inline;float: right; }
+.home_header  {position: fixed;top: 0;transition: top 0.2s ease-in-out;width: 100%;height: 80px;z-index: 999;}
+.nav-up {top: -80px; }
+nav.navbar.navbar-default .nav li a{color:#fff;font-size:13px;text-transform:uppercase;font-family:'tiempo-reg';padding:0px 10px;margin:10px 0px;border-right:1px solid #bdb196;line-height:18px;letter-spacing:2px;}
+nav.navbar.navbar-default .nav li a:hover{color:#ffcd48;}
+nav.navbar.navbar-default .nav li:nth-child(4) a{border-right:none;}
+nav.navbar.navbar-default .nav li:last-child a{color:#ffcd48;font-size:13px;transition:0.3s ease;text-transform:uppercase;font-family:'tiempo-reg';padding:10px 10px;margin:0px 0px;border-right:none;border:1px solid #ffcd48;line-height:18px;margin-left:20px;}
+nav.navbar.navbar-default .nav li:last-child a:hover{color:#fff;background:#cda743;transition:0.3s ease;border:1px solid #cda743;transition:0.3s ease;}
+.navbar-nav li{padding:15px 0px;}
+.navbar-default .navbar-toggle{border-color:transparent;background:transparent;}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{background-color:transparent;border:none;outline:none;}
+.navbar-toggle{margin-top:15px;}
+#nav-icon3{width:30px;height:30px;position:relative;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.5s ease-in-out;-moz-transition:.5s ease-in-out;-o-transition:.5s ease-in-out;transition:.5s ease-in-out;cursor:pointer;}
+#nav-icon3 span{display:block;position:absolute;height:3px;width:100%;background:#d3531a;border-radius:9px;opacity:1;left:0;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-o-transform:rotate(0deg);transform:rotate(0deg);-webkit-transition:.25s ease-in-out;-moz-transition:.25s ease-in-out;-o-transition:.25s ease-in-out;transition:.25s ease-in-out;}
+#nav-icon3 span:nth-child(1){top:0px;}
+#nav-icon3 span:nth-child(2),#nav-icon3 span:nth-child(3){top:10px;}
+#nav-icon3 span:nth-child(4){top:20px;}
+#nav-icon3.open span:nth-child(1){top:18px;width:0%;left:50%;}
+#nav-icon3.open span:nth-child(2){-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);-o-transform:rotate(45deg);transform:rotate(45deg);}
+#nav-icon3.open span:nth-child(3){-webkit-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-o-transform:rotate(-45deg);transform:rotate(-45deg);}
+#nav-icon3.open span:nth-child(4){top:18px;width:0%;left:50%;}
+section.about-book{min-height:700px;background:url(../images/book-back.png)no-repeat 50px 0px/cover #cd6733;padding:60px 0px;}
+span.book-quotes{display:block;padding:0 65px;font-size:19px;color:#fff8e6;text-align:center;}
+.pad-top25{padding-top:25px;}
+.pad-left25{padding-left:25px;}
+h1.title-book{font-size:44px;color:#fff;text-transform:uppercase;font-family:'tiempo-reg';margin-bottom:5px;}
+h1.title-book i{font-size:44px;color:#fff;text-transform:lowercase;font-family:'tiempo-reg';}
+span.sub-title{font-size:24px;color:#fff;display:block;margin-bottom:25px;font-family:'tiempo-italic';}
+a.order{color:#333;font-size:14px;text-transform:uppercase;padding:10px 15px;display:inline-block;font-family:'tiempo-reg';background:#ffcd48;font-weight:700;border:none;}
+a.order:hover{color:#333;background:#e0b33b;text-decoration:none;}
+blockquote{border-left:none;margin:50px 0px 15px;padding:0px 0px;quotes:"\201C""\201D""\2018""\2019";font-size:18px;color:#fff8e6;font-family:'tiempo-italic';}
+blockquote:before{color:#ccc;content:"";background:url(../images/open-quotes.png) no-repeat 0;font-size:4em;line-height:0;margin-right:0.15em;vertical-align:0;width:32px;height:0;padding:10px 8px;display:inline-block;}
+blockquote p{display:inline;}
+span.author-name{display:block;padding:10px 0px;font-size:19px;font-family:'tiempo-italic';}
+.more-testimonials{font-size:18px;color:#fff8e6;text-decoration:underline;font-family:'tiempo-reg'}
+.more-testimonials:hover{font-size:18px;color:#000;text-decoration:underline;font-family:'tiempo-reg'}
+section.about-carol{height:600px;}
+.wrapper-about{background:#fff8e6;padding:67px 90px 66px 300px;overflow:auto;max-height:600px;}
+.Carol-image{width:25%;display:block;float:left;}
+.carol-text{width:70%;float:left;overflow:auto;}
+h3.carol-title{font-size:25px;margin:0;color:#333;line-height:25px;margin-bottom:10px;font-family:'tiempo-reg';}
+p.carol-para{font-size:15px;color:#5b4c31;line-height:22px;font-family:'opensans-reg';}
+a.readmore{font-size:14px;color:#cc6633;padding-left:25px;margin:10px 0px;display:inline-block;font-family:'opensans-reg';background:url(../images/readmore.png)no-repeat 0px 0px/contain;}
+hr.grey{border-top:1px solid #bbb7ad;margin:10px 0;}
+.gratitude-wrapper{display:block;margin:25px 0px 0;overflow:auto;}
+.gratitude-wrapper h4{font-size:20px;color:#333;margin-bottom:20px;font-family:'tiempo-italic';}
+.gratitude-wrapper p{color:#5a4b30;font-size:17px;line-height:26px;font-family:'tiempo-italic';}
+.award-image{width:100%;min-height:600px;background:url(../images/award.png)no-repeat 0px -25px/cover;position:relative;}
+.blue-strip{padding:10px 30px;background:#148493;color:#fff;position:absolute;bottom:0;width:100%;}
+span.text-blue{font-size:21px;font-family:'tiempo-italic';padding:10px 392px 10px 15px;display:block;}
+.showonlg{display:none;}
+section.book-pages{padding:100px 0px 50px;display:block;overflow:auto;background:url(../images/black-bg.png)no-repeat 0px 0px/cover;clear:both;}
+span.bookquotes{font-size:25px;color:#fff8e6;font-family:'tiempo-italic';padding-right:35px;display:block;line-height:29px;padding-top:20px;}
+.wrapperbook{width:100%;height:550px;background:url(../images/bookpage.png)no-repeat 0px 0px/cover;position:relative;}
+a.readmore-white{display:inline-block;margin:0 auto;text-align:center;font-size:14px;color:#cc6633;padding-left:25px;margin:10px 0px;display:inline-block;font-family:'opensans-reg';background:url(../images/readmore.png)no-repeat 0px 0px/contain;}
+.but-center{display:block;margin:0 auto;text-align:center;margin:10px 0px;}
+.left-page{width:40%;position:absolute;top:40px;left:50px;}
+h4.title{color:#cc6633;font-size:24px;text-transform:uppercase;letter-spacing:2px;text-align:center;font-family:'tiempo-reg'}
+span.border-custom{width:80px;height:20px;display:block;margin:20px auto;background:url(../images/border-title.png)no-repeat 0px 0px/contain;}
+.left-page p{font-size:15px;color:#585858;font-family:'opensans-reg';}
+.right-page{width:40%;position:absolute;right:50px;top:40px;}
+.right-page span.sub-title{font-size:15px;color:#333;font-family:'tiempo-reg';margin-bottom:0px;text-align:center;}
+.right-page p{font-size:15px;color:#585858;font-family:'opensans-reg';}
+section.video{display:block;padding:50px 0px;overflow:auto;background:#fff8e6;width:100%;position:relative;}
+section.video h4{display:block;text-align:center;font-size:25px;color:#333;font-family:'tiempo-reg';}
+.placeholder{background:url(../images/video-back.png) no-repeat 0 0/cover;color:white;display:block;position:absolute;top:0;right:0;bottom:0;left:0;text-align:center;}
+.prompt{display:inline-block;padding:80px 0px 15px;font-size:18px;line-height:26px;cursor:pointer;position:absolute;left:0;right:0;text-transform:capitalize;top:0;bottom:0;}
+.video-thumb{position:relative;margin:60px auto 30px;display:block;text-align:center;}
+iframe#video1 {width: 100% !important;height: 400px !important;margin-top: 15px; }
+section.contact{background:#fff8e6;padding:100px 0px;min-height:75vh;}
+section.contact h2{color:#cc6633;text-align:center;font-family:'tiempo-reg';text-transform:uppercase;}
+hr.center-black{margin-top:20px;margin-bottom:20px;border:0;border-top:1px solid #333;width:50px;}
+.email-sec{padding:40px 0px;text-align:center;}
+img.center-block{display:block;margin:0 auto 15px;}
+span.normal-text{display:block;text-align:center;font-size:18px;color:#333;font-family:'opensans-reg';}
+a.email-link{color:#cc6633;font-size:30px;margin:10px 0px;display:inline-block;}
+section.contact.Testimonials{min-height:unset;padding:60px 0px 100px;}
+.testimonials-client blockquote{color:#333;font-family:'tiempo-reg';}
+.testimonials-client blockquote:before{color:#ccc;content:"";background:url(../images/testi-quotes.png) no-repeat 0;font-size:4em;line-height:0;margin-right:0.15em;vertical-align:0;width:32px;height:0;padding:10px 8px;display:inline-block;}
+.testimonials-client blockquote strong{font-size:40px;color:#333;}
+.testimonials-client{padding-right:70px;}
+.testimonials-client span.border-custom{width:80px;height:20px;display:block;margin:20px 0;background:url(../images/testi-border.png)no-repeat 0px 0px/contain;}
+section.about-book.bookpage{min-height:200px;background:url(../images/book-band.png)no-repeat 0px 0px/cover #cd6733}
+h2.book-title{color:#fff;text-align:center;font-family:'tiempo-reg';text-transform:uppercase;}
+hr.light-gold{border:1px solid #fff8e6;width:60px;margin:10px auto;}
+section.book-desc{background:#fff8e6;padding:30px 0px 60px;position:relative;}
+.book-desc .testimonials-client blockquote{color:#333;font-family:'tiempo-italic';font-size:38px;margin-bottom:25px;}
+.book-desc .testimonials-client blockquote:before{margin-right:5px;}
+.book-desc .testimonials-client{padding-right:0px;}
+.book-desc p{font-size:18px;font-family:'opensans-reg';color:#333;line-height:26px;margin-bottom:15px;}
+.book-desc span.buy-footer{font-size:18px;color:#333;padding:10px 8px 0 0;float:left;font-family:'opensans-reg';font-weight:700;}
+.book-desc .buy-sec img{padding-right:10px;display:unset;}
+.buy-sec{padding:20px 50px;border:2px solid #ca6432;border-radius:10px;margin:60px 0px 60px;display:block;}
+.book-wrapper{position:absolute;left:0;right:30px;top:-140px;}
+.book-wrapper img.center-block{display:block;margin:0 auto 15px;width:100%;}
+section.about-sec{padding:100px 0px 100px;display:block;overflow:auto;background:#fff8e6;}
+.about-sec h2{color:#cc6633;font-family:'tiempo-reg';text-transform:uppercase;margin-top:0;}
+.about-sec p{font-size:18px;font-family:'opensans-reg';color:#333;line-height:26px;margin-bottom:15px;}
+hr.black{border:1px solid #333;width:50px;margin:10px 0px;}
+.bluestrip{margin:50px 0px;background:#148493;padding:50px 50px;}
+.bluestrip span.border-custom{width:80px;height:20px;display:block;margin:20px auto;background:url(../images/about-border.png)no-repeat 0px 0px/contain;}
+span.title-gratitude{display:block;text-align:center;font-size:30px;color:#fff;margin-bottom:10px;font-family:'tiempo-italic';}
+span.content-gratitude{font-size:22px;color:#fff8e6;font-family:'tiempo-italic';display:block;padding:0px 10px;}
+span.content-gratitude{font-size:22px;color:#fff8e6;font-family:'tiempo-italic';display:block;padding:0px 60px;text-align:center;margin-bottom:10px;}
+span.from-gratitude{font-size:15px;color:#fff8e6;font-family:'opensans-reg';display:block;padding:10px 0px;text-align:center;}
+.book-text span{display:block;padding:70px 12px;font-size:25px;font-family:'tiempo-reg';}
+.padtop50{padding-top:50px;clear:both;}
+.onepage{padding:55px 60px 20px;background:url(../images/one-page.png) no-repeat 0/cover;height:660px;}
+.onepage p{font-size:18px;color:#585858;font-family:'opensans-reg';}
+footer{background:#cc6633;padding:40px 0px;}
+.copy{color:#fff8e6;font-size:13px;font-family:'opensans-reg';padding:15px 0px;}
+.footer-img img{padding-right:10px;display:unset;}
+span.buy-footer{font-size:16px;color:#fff8e6;font-family:'tiempo-reg';text-transform:uppercase;letter-spacing:1px;padding:11px 0px;display:inline;overflow:auto;}
+
+
+
+.card{border: 1px solid red;overflow: hidden;}
+.card:hover .card-head img{transform: scale(1.1);transition: 0.2s ease;}
+.card-head img{width: 100%;transition: 0.2s ease;}
+
+.card-product{border: 1px solid red;overflow: hidden;}
+.card-product:hover {transition: 0.2s ease;background: red;z-index: 5}
+.card-product:hover .card-head img{transition: 0.2s ease;background: red;z-index: 15}
+.card-head img{width: 100%;transition: 0.2s ease;}
+
+
+@media(max-width:1600px){.wrapper-about{background:#fff8e6;padding:67px 90px 66px 150px;overflow:auto;}
+span.text-blue{padding:10px 260px 10px 15px;display:block;}
+}
+@media(max-width:1440px){.wrapper-about{background:#fff8e6;padding:67px 90px 66px 85px;overflow:auto;}
+span.text-blue{padding:22px 180px 22px 15px;display:block;}
+.award-image{background:url(../images/award.png)no-repeat 0px 0/105%;}
+}
+@media(max-width:1366px){.wrapper-about{background:#fff8e6;padding:67px 75px 66px 70px;overflow:auto;}
+.blue-strip{padding:12px 30px;}
+.award-image{background:unset;}
+.showonlg{display:block;}
+.testimonials-client{padding-right:59px;}
+}
+@media(max-width:1280px){section.about-book{min-height:700px;background:url(../images/book-back.png)no-repeat 0px 0px/cover;padding:60px 0px;}
+.wrapper-about{background:#fff8e6;padding:50px 45px 50px;overflow:auto;min-height:auto;max-height:unset;}
+section.about-carol{height:unset;}
+.award-image{background:unset;min-height:567px;}
+span.text-blue{padding:22px 100px 22px 15px;display:block;}
+section.about-book.bookpage{min-height:200px;background:url(../images/book-band.png)no-repeat -100px 0px/cover #cd6733;}
+.onepage{padding:55px 60px 20px;background:url(../images/one-page.png) no-repeat 0/100%;height:660px;}
+.buy-sec { padding: 20px 46px;}
+}
+@media screen and (max-width: 1279px) and (min-width: 1025px) {
+
+.wrapperbook { width: 100%; height: 550px; background: url(../images/booktext.png)no-repeat 0px 0px/contain; position: relative; }
+.left-page, .right-page { display: none;}
+.col-md-6.bio {width: 100%;margin-top: 24px; }
+.onepage {padding: 55px 60px 20px;background: #f0f0f0;height: auto;margin-bottom: 25px;box-shadow: 3px 3px 9px 1px rgba(0,0,0,.5);}
+}
+
+
+@media (max-width:1024px){.navbar-brand{float:left;padding:30px 15px;font-size:18px;line-height:20px;width:250px;height:29px;}
+section.about-carol .col-md-6{width:100%;}
+.Carol-image img{display:block;margin:0 auto}
+.award-image img{width:100%;}
+.book-pages .col-md-3{width:100%;}
+.book-pages .col-md-3 img{margin:0 auto;display:block;}
+span.bookquotes{padding-top:20px;padding-bottom:20px;text-align:center;padding-right:0}
+.book-pages .col-md-9{width:100%;}
+iframe#video1{width:753px !important;height:388px !important;}
+section.contact{min-height:65vh;}
+.testimonials-client{padding-right:30px;}
+.book-desc .testimonials-client blockquote{font-size:33px;line-height:33px;}
+.col-md-6.bio{width:100%;margin-top:24px;}
+.onepage {padding: 55px 60px 20px;background: #f0f0f0;height: auto;margin-bottom: 25px;box-shadow: 3px 3px 9px 1px rgba(0,0,0,.5);}
+.onepage p{font-size:17px;}
+.book-text span{display:block;padding:22px 12px;font-size:22px;font-family:'tiempo-reg';line-height:28px;}
+}
+
+@media screen and (max-width: 1023px) and (min-width: 800px) {
+	.onepage {padding: 55px 60px 20px;background: #f0f0f0;height: auto;margin-bottom: 25px;box-shadow: 3px 3px 9px 1px rgba(0,0,0,.5);}
+}
+
+@media (max-width:992px){}
+@media(min-width:801px) (max-width:991px){}
+@media(max-width:800px){.navbar-brand{float:left;padding:32px 0px;font-size:18px;line-height:20px;width:180px;height:29px;}
+nav.navbar.navbar-default .nav li a{color:#fff;font-size:11px;padding:0px 5px;margin:10px 0px;}
+nav.navbar.navbar-default .nav li:last-child a{color:#ffcd48;font-size:11px;padding:10px 5px;margin:0px 0px;margin-left:5px;}
+section.about-book{min-height:700px;background:url(../images/book-back.png)no-repeat -220px 0/cover #cd6733;padding:60px 0px;}
+.pad-left25{padding-left:0;}
+.wrapperbook{width:100%;height:470px;background:url(../images/booktext.png)no-repeat 0px 0px/contain;position:relative;}
+.left-page,.right-page{display:none;}
+iframe#video1{width:100% !important;height:350px !important;}
+.col-md-6.footer-img{display:block;margin:0 auto;text-align:center;}
+.copy{text-align:center;}
+.testimonials-client{padding-right:0;}
+.book-wrapper{position:relative;left:0;right:0;top:0;}
+img.center-block{display:block;margin:0 auto 15px;width:auto;}
+.book-desc .testimonials-client blockquote{font-size:30px;line-height:33px;}
+.bluestrip{padding:50px 0;}
+.book-image img{display:block;margin:0 auto;}
+.book-text span{text-align:center;}
+.onepage{padding:55px 60px 20px;background:#f0f0f0;height:auto;margin-bottom:25px;box-shadow:3px 3px 9px 1px rgba(0,0,0,.5);}
+.col-md-5.book-image{padding-top:25px;}
+}
+@media(max-width:767px){.navbar>.container .navbar-brand{margin-left:15px;}
+.navbar-nav li{padding:3px 0px;}
+nav.navbar.navbar-default .nav li a{border-right:none;}
+nav.navbar.navbar-default .nav li:last-child a{display:inline-block;}
+.copy{text-align:center;}
+nav.navbar.navbar-default .nav li a{padding:0px 25px;}
+nav.navbar.navbar-default .nav li:last-child a{margin-left:25px;}
+}
+@media(max-width:667px){}
+@media(max-width:640px){.award-image{background:unset;min-height:auto;}
+.blue-strip{padding:0px 30px;}
+span.text-blue{padding:15px 100px 15px 15px;display:block;}
+section.contact{min-height:auto;}
+}
+@media (max-width:480px){.footer-img img{padding-right:5px;display:unset;}
+.copy{text-align:center;}
+.wrapper-about{padding:50px 0 50px;}
+.Carol-image{width:30%;}
+.wrapper-about{padding:50px 20px 50px 0;}
+span.text-blue{padding:15px 15px 15px 15px;display:block;font-size:18px;}
+.wrapperbook{width:100%;height:285px;}
+.placeholder{background:url(../images/video-back.png) no-repeat 0 0/contain;}
+iframe#video1{width:100% !important;height:237px !important;}
+section.contact{min-height:auto;padding:30px 0px;}
+section.about-sec{padding:50px 0px 50px;background:#fff8e6;}
+span.content-gratitude{padding:0px 20px;}
+}
+@media(max-width:435px){.footer-img img{padding-right:10px;display:block;text-align:center;margin:5px auto;}
+.buy-sec{display:table;text-align:center;}
+.book-desc span.buy-footer{padding:10px 8px 8px 0;float:none;display:block;}
+.book-desc .buy-sec img{padding-right:10px;display:unset;padding-bottom:10px;}
+.book-desc p{font-size:16px;font-family:'opensans-reg';color:#333;line-height:24px;margin-bottom:15px;}
+.book-desc .testimonials-client blockquote{font-size:26px;line-height:28px;}
+.about-sec h2{font-size:28px;}
+.about-sec p{font-size:16px;}
+span.title-gratitude{font-size:28px;}
+span.content-gratitude{font-size:19px;}
+.onepage{padding:25px 40px 30px;}
+section.contact.Testimonials{min-height:unset;padding:30px 0px 100px;}
+}
+@media(max-width:414px){span.book-quotes{display:block;padding:0 40px;}
+.wrapperbook{width:100%;height:240px;}
+iframe#video1{width:100% !important;height:200px !important;}
+.navbar-toggle{margin-top:20px;}
+blockquote:before{padding:12px 8px;}
+a.email-link{font-size:26px;}
+span.normal-text{font-size:15px;}
+}
+@media(max-width:375px){h1.title-book{font-size:36px;}
+span.sub-title{font-size:20px;}
+.blockquote{font-size:17px;}
+.Carol-image{width:100%;margin:0px auto 10px;}
+.carol-text{width:100%;}
+.wrapper-about{padding:50px 20px 50px 20px;}
+.blue-strip{padding:0px 30px;position:relative;}
+.placeholder{background:url(../images/video-back.png) no-repeat center/cover;height:190px;}
+a.email-link{font-size:24px;}
+.padtop50{padding-top:20px;clear:both;}
+.onepage{padding:25px 25px 29px;}
+h4.title{color:#cc6633;font-size:18px;}
+.onepage p{font-size:16px;}
+}
+@media(max-width:360px){}
+@media(max-width:320px){.wrapperbook{width:100%;height:175px;}
+span.bookquotes{font-size:19px;line-height:25px;}
+a.email-link{font-size:20px;}
+.bluestrip{padding:10px 0;}
+}
